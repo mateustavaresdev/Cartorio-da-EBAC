@@ -125,8 +125,9 @@ int main() //responsável pela criação do menu
 		printf("### Escolha a opçao desejada do menu ###:\n\n"); //comando para o usuário do app
 		printf("\t1 - Registrar Nomes\n"); //apresenta a opção de registro ao usuário
 		printf("\t2 - Consultar Nomes\n"); //apresenta a opção de consulta ao usuário
-		printf("\t3 - Deletar Nomes\n\n"); //apresenta a opção de apagar cadastro da escola
-		printf("Opção:");//fim do menu
+		printf("\t3 - Deletar Nomes\n"); //apresenta a opção de apagar cadastro da escola
+		printf("\t4 - Sair do Sistema\n\n"); //apresenta a opção de sair do sistema
+		printf("Opção:"); //fim do menu
 	
 		scanf("%d", &opcao); //armazenando a escolha do usuário
 	
@@ -145,6 +146,11 @@ int main() //responsável pela criação do menu
 			case 3: //refere-se à terceira opção
 			deletar(); //chamado de funções
 			break; //finaliza a opção
+			
+			case 4: //refere-se à quarta opção
+			printf("Obrigado por Utilizar o Sistema!\n\n"); //apresenta a frase de fechamento
+			return 0; //realiza a operação de fechar o sistema
+			break; //fecha a opção 4
 			
 			default: //mostra a mensagem padrão para opção incompatível
 			printf("Essa opção não está disponível.\n\n"); //apresenta que o cadastro não foi encontrado
